@@ -77,6 +77,8 @@ body{
 .hero-top__headline{
     font-size: 1.5rem;
     line-height: 2.3rem;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .hero-top__description{
@@ -84,6 +86,7 @@ body{
     line-height: 1.6rem;
     font-weight: 400;
     margin: 20px auto;
+    max-width: 380px;
 }
 
 .hero-top__cta{
@@ -170,16 +173,19 @@ body{
 
 .testimonial{
     margin: 160px auto;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-wrap: wrap;
-   
+}
+
+.card--one{
+    position: relative;
 }
 
 .testimonial__image--quote{
     position: absolute;
     top: -15px;
-    left: 20px;
+    left: 10px;
 }
 
 
@@ -227,6 +233,9 @@ body{
     padding: 20px;
     border-radius: 10px;
     width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+    box-shadow: 2px 4px 13px -4px rgba(0, 0, 0, 0.5);   
 }
 
 .signup__headline{
@@ -275,7 +284,7 @@ body{
     display: flex;
 }
 
-.footer__location{
+.footer__location--description{
     font-size: .9rem;
     line-height: 1.4rem;
     margin-left: 20px;
@@ -313,7 +322,6 @@ body{
     color: var(--white);
     text-decoration: none;
     font-size: .9rem;
-
 }
 
 .footer__about--links li{
@@ -342,7 +350,7 @@ body{
     transition: 250ms;
 }
 
-/* styles twitter icon separately */
+/* style twitter icon separately */
 .fab.fa-twitter{
     padding: 9px;
 
@@ -354,15 +362,6 @@ body{
 }
 
 
-@media screen and (min-width: 600px){
-
-    .testimonial__image--quote{
-        position: absolute;
-        top: -15px;
-        left: 90px;
-    }
-}
-
 @media screen and (min-width: 900px){
 
     .wrapper{
@@ -370,11 +369,43 @@ body{
         margin: 40px auto;
     }
 
+    .hero-top__description{
+        font-size: .8rem;
+        line-height: 1.3rem;
+    }
+
     .help{
         flex-direction: row;
         align-items: center;
     }
-   
+
+    .help__content{
+        width: 450px;
+        margin-left: 20px;
+    }
+
+    .help__headline{
+        font-size: 1.5rem;
+        margin: 20px 0;
+        max-width: 250px;
+    }
+
+    .testimonial__card{
+        width: 320px;
+        background: var(--testimonialblue);
+        margin: 30px auto;
+    }
+
+    .testimonial__image--quote{
+        width: 40px;
+        top: -22px;
+        left: -6px ;
+        z-index: -2;
+    }
+
+    .testimonial__description{
+        font-size: .8rem;
+    }
 
     .service__group{
         margin: 80px auto;
@@ -389,14 +420,21 @@ body{
         width: 350px;
     }
 
+    .service__group-description{
+        font-size: .8rem;
+        line-height: 1.3rem;
+    }
+
+    .signup{
+        padding: 20px 50px;  
+    }
 
     .signup__headline{
         font-size: 1.5rem;
     }
 
-    .service__group-description{
-        font-size: .8rem;
-        line-height: 1.3rem;
+    .signup__description{
+        margin: 20px 50px;
     }
     
     .signup__group{
@@ -412,6 +450,40 @@ body{
     .signup__cta{
         width: 40%;
         margin: 10px 10px;
+    }
+
+    .footer__content{
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer__tel--wrapper{
+        margin: 0 auto 20px;
+    }
+
+    .footer__location--description{
+        font-size: .8rem;
+        line-height: 1.3rem;
+        max-width: 270px;
+    }
+
+    .footer__profile{
+        margin: 0;
+    }
+
+    .footer__profile--links li{
+        margin: 0 auto 20px;
+    }
+
+    .footer__about--links li{
+        margin: 0 auto 20px;
+    }
+    
+    .social__links{
+        margin-top: 0;
+        font-size: .7rem;
     }
 
 }
