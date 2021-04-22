@@ -113,7 +113,7 @@ body{
 }
 
 .service__group__headline{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 20px;
 }
 
@@ -225,7 +225,7 @@ body{
 
 .signup__description{
     font-size: .8rem;
-    line-height: 1rem;
+    line-height: 1.3rem;
     margin: 20px auto;
 }
 
@@ -316,8 +316,35 @@ body{
     color: var(--white);
     text-decoration: none;
     font-size: .9rem;
+}
+
+.social__links{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: .7rem;
+    text-align: center;
+}
+
+.social__links .fab{
+    margin: 10px;
+    border-radius: 50px;
+    border: 1px solid var(--white);
+    padding: 9px 11px;
+    transition: 250ms;
+}
+
+/* styles twitter icon separately */
+.fab.fa-twitter{
+    padding: 9px;
 
 }
+
+.social__links .fab:hover{
+    background: linear-gradient(var(--blue), var(--cyan));
+    border: 0;
+}
+
+
 
 
 
