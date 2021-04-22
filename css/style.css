@@ -25,6 +25,7 @@ body{
     color: #fff;
 }
 
+
 .wrapper{
     width: 80%;
     margin: 40px auto;
@@ -67,7 +68,8 @@ body{
 }
 
 .hero-top__image{
-    width: 300px;
+    width: 90%;
+    max-width: 400px;
     height: auto;
     margin: 50px auto;
 }
@@ -91,7 +93,6 @@ body{
     color: var(--white);
     font-weight: 700;
     font-size: .8rem;
-    /* width: 80%; */
     border-radius: 50px;
 }
 
@@ -121,8 +122,14 @@ body{
     line-height: 1.6rem;
 }
 
+.help{
+    display: flex;
+    flex-direction: column;
+}
+
 .help__image{
-    width: 300px;
+    width: 90%;
+    max-width: 400px;
     height: auto;
     margin: 50px auto;
 }
@@ -164,6 +171,9 @@ body{
 .testimonial{
     margin: 160px auto;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+   
 }
 
 .testimonial__image--quote{
@@ -253,7 +263,6 @@ body{
 }
 
 .footer{
-    /* background-color: var(--DarkBlue); */
     margin: 50px auto;
 }
 
@@ -342,6 +351,69 @@ body{
 .social__links .fab:hover{
     background: linear-gradient(var(--blue), var(--cyan));
     border: 0;
+}
+
+
+@media screen and (min-width: 600px){
+
+    .testimonial__image--quote{
+        position: absolute;
+        top: -15px;
+        left: 90px;
+    }
+}
+
+@media screen and (min-width: 900px){
+
+    .wrapper{
+        width: 85%;
+        margin: 40px auto;
+    }
+
+    .help{
+        flex-direction: row;
+        align-items: center;
+    }
+   
+
+    .service__group{
+        margin: 80px auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 800px;
+        justify-content: space-around;
+    }
+
+    .service__group .card{
+        margin: 40px 20px;
+        width: 350px;
+    }
+
+
+    .signup__headline{
+        font-size: 1.5rem;
+    }
+
+    .service__group-description{
+        font-size: .8rem;
+        line-height: 1.3rem;
+    }
+    
+    .signup__group{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .signup__input{
+        width: 100%;
+        margin: 10px 10px;
+    }
+    
+    .signup__cta{
+        width: 40%;
+        margin: 10px 10px;
+    }
+
 }
 
 
